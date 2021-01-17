@@ -1,9 +1,18 @@
-import img from "./assets/herman-armchair.png";
+import img1 from "./assets/herman-armchair.png";
+import img2 from "./assets/vica-armchair.png";
+import img3 from "./assets/vern-dinno-table-chair.png";
+import img4 from "./assets/crain-armchair.png";
+import img5 from "./assets/puf.png";
+import img6 from "./assets/rendant-lamp.png";
+import img7 from "./assets/herman-sofa.png";
+import img8 from "./assets/reece-cofee-table.png";
+import img9 from "./assets/vern-lamp.png";
+import img10 from "./assets/herman-lamp.png";
 
 export const getItemById = (id) =>
   items.find(({ id: itemId }) => itemId === Number(id));
 
-export const getItems = (amount) => items.slice(0, amount);
+export const getItems = (amount = items.length) => items.slice(0, amount);
 
 export const items = [
   {
@@ -13,7 +22,7 @@ export const items = [
     category: ["sofas", "armchair"],
     material: ["solid-wood", "pine"],
     series: ["herman"],
-    image: img
+    image: img1
   },
   {
     id: 1,
@@ -22,7 +31,7 @@ export const items = [
     category: ["sofas", "armchair"],
     material: ["oak", "pine"],
     series: ["vica"],
-    image: img
+    image: img2
   },
   {
     id: 2,
@@ -31,7 +40,7 @@ export const items = [
     category: ["sofas", "armchair"],
     material: ["oak"],
     series: ["vern"],
-    image: img
+    image: img3
   },
   {
     id: 3,
@@ -40,7 +49,7 @@ export const items = [
     category: ["sofas", "armchair"],
     material: ["pine"],
     series: ["crain"],
-    image: img
+    image: img4
   },
   {
     id: 4,
@@ -48,8 +57,8 @@ export const items = [
     price: 80,
     category: ["sofas", "armchair"],
     material: ["solid-wood"],
-    series: ["herman"],
-    image: img
+    series: ["loft"],
+    image: img5
   },
   {
     id: 5,
@@ -58,7 +67,7 @@ export const items = [
     category: ["lamps"],
     material: ["solid-wood", "oak"],
     series: ["rendant"],
-    image: img
+    image: img6
   },
   {
     id: 6,
@@ -67,15 +76,33 @@ export const items = [
     category: ["sofas", "armchair"],
     material: ["solid-wood", "pine"],
     series: ["herman"],
-    image: img
+    image: img7
   },
   {
     id: 7,
     name: "reece-cofee table",
-    price: 130,
+    price: 580,
     category: ["tables"],
     material: ["oak", "pine"],
     series: ["reece"],
-    image: img
+    image: img8
+  },
+  {
+    id: 8,
+    name: "vern lamp",
+    price: 100,
+    category: ["lamps"],
+    material: ["pine"],
+    series: ["vern"],
+    image: img9
+  },
+  {
+    id: 9,
+    name: "herman lamp",
+    price: 80,
+    category: ["lamps"],
+    material: ["solid-wood", "oak"],
+    series: ["herman"],
+    image: img10
   }
 ];
