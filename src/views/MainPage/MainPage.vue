@@ -386,7 +386,7 @@ export default {
 
           .bedroom {
             width: 255px;
-            left: 226px;
+            left: 254px;
             top: 28px;
             position: absolute;
             background: rgba(3, 81, 74, 0.78);
@@ -415,9 +415,9 @@ export default {
           }
 
           .kitchen {
-            width: 230px;
-            left: 251px;
-            top: 272px;
+            width: 248px;
+            left: 261px;
+            top: 264px;
             position: absolute;
             background: rgba(99, 141, 185, 0.76);
             color: white;
@@ -562,7 +562,7 @@ export default {
         text-transform: none;
         position: absolute;
         left: 400px;
-        top: 580px;
+        top: 350px;
 
         .btn-inner {
           font-size: 22px;
@@ -622,7 +622,7 @@ export default {
     left: -400px;
     top: 2292px;
     z-index: -1;
-    background: #C5DFD7;
+    background: #c5dfd7;
     border-radius: 82px;
     transform: rotate(-11.82deg);
   }

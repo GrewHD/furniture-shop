@@ -3,7 +3,9 @@
     <div class="new">
       <h2>New</h2>
       <div class="wrapper">
-        <item
+        <item v-for="item in firstNewArivalsRow" :key="item.id" v-bind="item" />
+
+        <!-- <item
           image="https://via.placeholder.com/150"
           name="Vern Lamp"
           price="100"
@@ -18,10 +20,15 @@
           image="https://via.placeholder.com/150"
           name="RENDANT LAMP"
           price="50"
-        />
+        /> -->
       </div>
       <div class="wrapper">
         <item
+          v-for="item in secondNewArivalsRow"
+          :key="item.id"
+          v-bind="item"
+        />
+        <!-- <item
           image="https://via.placeholder.com/150"
           name="HERMAN ARMCHAIR"
           price="100"
@@ -40,7 +47,7 @@
           image="https://via.placeholder.com/150"
           name="CRAIN ARMCHAIR"
           price="150"
-        />
+        /> -->
       </div>
     </div>
     <div class="rectangle"></div>
@@ -48,11 +55,19 @@
 </template>
 
 <script>
+import { items } from "../../data/items";
+
 import Item from "../../components/Item";
 export default {
   name: "New",
   components: {
     Item,
+  },
+  data() {
+    return {
+      firstNewArivalsRow: items.splice(0, 4),
+      secondNewArivalsRow: items.splice(4),
+    };
   },
 };
 </script>
@@ -72,7 +87,7 @@ export default {
     left: 48px;
     top: 130px;
     z-index: -1;
-    background: #C5DFD7;
+    background: #c5dfd7;
     border-radius: 59px;
     transform: rotate(-90deg);
   }

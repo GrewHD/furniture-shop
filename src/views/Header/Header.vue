@@ -8,7 +8,7 @@
     <menu-item label="new" link="/new" />
     <div class="search-login-block">
       <search />
-      <login />
+      <login link="/sign-in" />
     </div>
   </div>
 </template>
