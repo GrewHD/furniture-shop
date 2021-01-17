@@ -17,7 +17,7 @@ export default {
     id: Number,
     image: String,
     name: String,
-    price: String,
+    price: Number,
   },
   methods: {
     openItemViewPage: function () {
@@ -28,8 +28,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
+.item-wrapper {
   width: 208px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 
   .img-box {
     background: rgb(68, 68, 68);
@@ -53,8 +63,12 @@ export default {
   }
 
   .info {
+    width: 226px;
     padding: 10px 20px;
     background-color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
 
     .name {
       font-weight: 400;
